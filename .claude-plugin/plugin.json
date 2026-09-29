@@ -1,0 +1,15 @@
+{
+  "name": "icp-gtm-sim",
+  "displayName": "ICP & GTM Sim",
+  "version": "1.0.0",
+  "description": "Find your ICP and validate GTM messaging by testing copy against simulated buyer personas",
+  "author": {
+    "name": "Researchify Labs",
+    "url": "https://github.com/ResearchifyLabs"
+  },
+  "homepage": "https://github.com/ResearchifyLabs/icp-gtm-sim",
+  "repository": "https://github.com/ResearchifyLabs/icp-gtm-sim",
+  "license": "MIT",
+  "keywords": ["icp", "gtm", "messaging", "positioning", "marketing", "persona-simulation"],
+  "skills": "./"
+}

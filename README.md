@@ -33,21 +33,29 @@ from another tool.
 
 ## Install
 
-The skill is a single [`SKILL.md`](SKILL.md) file.
+**Any agent** — Claude Code, Codex, Cursor, GitHub Copilot and 75+ others, via
+[skills.sh](https://skills.sh):
 
-**Claude Code** — clone it into your skills folder:
+```bash
+npx skills add ResearchifyLabs/icp-gtm-sim
+```
+
+**Claude Code plugin** — inside Claude Code:
+
+```
+/plugin marketplace add ResearchifyLabs/icp-gtm-sim
+/plugin install icp-gtm-sim@researchify-labs
+```
+
+**Manually** — the skill is a single [`SKILL.md`](SKILL.md) file. Clone the repo into your
+agent's skills folder, e.g. for Claude Code:
 
 ```bash
 git clone https://github.com/ResearchifyLabs/icp-gtm-sim ~/.claude/skills/icp-gtm-sim
 ```
 
-For a single project, clone it into `.claude/skills/icp-gtm-sim` inside that project instead.
-
-**Other agents that support `SKILL.md` skills** — clone the repo into that agent's skills
-directory.
-
-**Any other agent** — add `SKILL.md` to the agent's context or instructions and ask it to
-follow the skill.
+**Agents without skill support** — add `SKILL.md` to the agent's context or instructions and
+ask it to follow the skill.
 
 ## Use
 
@@ -56,7 +64,8 @@ Ask in plain language:
 > Use icp-gtm-sim to test this message: *"…your copy…"*
 
 or just *"who is this for?"*, *"will this land?"*, *"test this landing page"*. In Claude
-Code you can also run `/icp-gtm-sim`.
+Code you can also run it directly: `/icp-gtm-sim` when installed as a skill, or
+`/icp-gtm-sim:icp-gtm-sim` when installed as a plugin.
 
 Works best in an agent that can run code (to build the persona grid and compute segment
 averages) and spawn subagents (to run batches in parallel).

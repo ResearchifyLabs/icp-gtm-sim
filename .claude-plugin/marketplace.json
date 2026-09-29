@@ -1,0 +1,14 @@
+{
+  "name": "researchify-labs",
+  "description": "Agent skills from Researchify Labs",
+  "owner": {
+    "name": "Researchify Labs"
+  },
+  "plugins": [
+    {
+      "name": "icp-gtm-sim",
+      "source": "./",
+      "description": "Find your ICP and validate GTM messaging by testing copy against simulated buyer personas"
+    }
+  ]
+}
